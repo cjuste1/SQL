@@ -1,0 +1,24 @@
+--Create a Clothing Store Database
+
+CREATE TABLE store ( id INTEGER PRIMARY KEY, name TEXT,orderno INTEGER, quantity INTEGER,price INTEGER, sold INTEGER);
+INSERT INTO store VALUES (1, "Shirt",100, 50, 15, 50);
+INSERT INTO store VALUES (2, "Pants",200, 40, 55, 40);
+INSERT INTO store VALUES (3, "Shoes",300, 30, 25, 30);
+INSERT INTO store VALUES (4, "Bags",400, 50, 10, 20);
+INSERT INTO store VALUES (5, "Dresses", 500,50, 30, 10);
+INSERT INTO store VALUES ( 6,"Hoodies",600,40,22,70);
+INSERT INTO store VALUES (7,"Scarf",700,24,10,20);
+INSERT INTO store VALUES(8,"T-shirt",800, 100,25,70);
+INSERT INTO store VALUES (9,"Skirts",900, 70,50,25);
+INSERT INTO store VALUES (10,"Sweaters",101,50, 20,30);
+INSERT INTO store VALUES (11,"Shirts",201,80,15,30);
+INSERT INTO store VALUES (12,"Shorts", 301,39,12,20);
+INSERT INTO store VALUES (13,"Sneakers",401,70,50,40);
+INSERT INTO store VALUES (14,"Socks",501,40,10,30);
+INSERT INTO store VALUES (15,"Leggings", 601,70,15,60);
+
+
+
+SELECT * FROM store;
+SELECT * FROM store WHERE orderno < 20 ORDER BY price < 30;
+SELECT price, SUM (quantity) FROM store;
