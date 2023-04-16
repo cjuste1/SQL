@@ -1,0 +1,31 @@
+CREATE TABLE cafeology (id INTEGER PRIMARY KEY, item_type TEXT, quantity INTEGER, price INTEGER, size TEXT);
+
+INSERT INTO cafeology VALUES (1, "Chocolate", 10, 14.00, "L");
+INSERT INTO cafeology VALUES (2, "Tumeric", 5, 24.00, "L");
+INSERT INTO cafeology VALUES (3, "Matcha", 50, 34.00, "L");
+INSERT INTO cafeology VALUES (4, "Cinnamon", 6, 94.00, "L");
+INSERT INTO cafeology VALUES (5, "Nutmeg", 60, 28.00, "L");
+INSERT INTO cafeology VALUES (6, "Chai", 7, 33.00, "L");
+INSERT INTO cafeology VALUES (7, "Peanut", 77, 5.00, "L");
+INSERT INTO cafeology VALUES (8, "Caramel", 8, 4.99, "L");
+INSERT INTO cafeology VALUES (9, "Vanilla", 80, 70.00, "L");
+INSERT INTO cafeology VALUES (10, "Pistachio", 25, 54.00, "L");
+INSERT INTO cafeology VALUES (11, "Bulletproof", 10, 15.00, "L");
+INSERT INTO cafeology VALUES (12, "Nutella", 19, 40.00, "L");
+INSERT INTO cafeology VALUES (13, "Pumpkin", 66, 59.00, "L");
+INSERT INTO cafeology VALUES (14, "Expresso", 88, 54.00, "L");
+INSERT INTO cafeology VALUES (15, "Coconut", 99, 54.00, "L");
+
+
+---display the database ordered by price. 
+SELECT * FROM cafeology 
+ORDER BY price;
+
+--display the sum of items from cafeology
+SELECT SUM(quantity) FROM cafeology;
+
+--display the top 5 popular items by quantity
+SELECT item_type, price, quantity
+FROM cafeology
+order by quantity desc
+limit 5;
