@@ -1,3 +1,5 @@
+CREATE A COFFEE SHOP NAME CAFEOLOGY DATABASE 
+
 CREATE TABLE cafeology (id INTEGER PRIMARY KEY, item_type TEXT, quantity INTEGER, price INTEGER, size TEXT);
 
 INSERT INTO cafeology VALUES (1, "Chocolate", 10, 14.00, "L");
