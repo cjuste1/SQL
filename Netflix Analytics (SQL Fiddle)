@@ -59,10 +59,17 @@ VALUES
     ('s19', 'Adam Salky', 'Freida Pinto| Logan Marshall-Green| Robert John Burke| Megan Elisabeth Kelly| Sarah Minnich| Hayes Hargrove| Mark Sivertsen| Brandon Fierro| Antonio Valles| Clint Obenchain'),
     ('s20', NULL, 'Blanca SuÃ¡rez| IvÃ¡n Marcos| Ã“scar Casas| AdriÃ¡n Lastra| Francesc Garrido| Stefan Weinert| Julia MÃ¶ller| Alicia Chojnowski')
     ;
-    
-    
-# The following SQL was written to answer specific questions about the content on Netflix:
 
+# Database quick analysis
+
+SELECT COUNT (*) FROM "netflix_people";
+
+SELECT* FROM "netflix_people" LIMIT 5;
+
+SELECT * FROM "netflix_titles_info" LIMIT 5;  
+
+
+# The following SQL was written to answer specific questions about the content on Netflix:
 
 #1. How many movie titles are there in the database? (movies only, not tv shows) 
 select count(*) 
